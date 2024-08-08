@@ -41,6 +41,9 @@ gdes <- function(x, y, b0, e, iter) {
   return(b)
 }
 
+## find correct solution for b using generated x and y
+b_sol(x = x, y = y)
+
 ## testing function under different conditions
 gdes(x = x, y = y, b0 = 1, e = .1, iter = 50)
 gdes(x = x, y = y, b0 = 15, e = .1, iter = 50)
