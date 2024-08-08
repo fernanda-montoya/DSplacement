@@ -54,7 +54,7 @@ twentyfirst_century$deathToll <- ifelse(grepl(",", twentyfirst_century$deathToll
                                       twentyfirst_century$deathToll) %>% as.numeric()
 
 ## convert back to tibble
-twentyfirst_century <- twenyfirst_century %>% as_tibble()
+twentyfirst_century <- twentyfirst_century %>% as_tibble()
 
 ## bind together both tables
 complete_disasters <- rbind(twentieth_century, twentyfirst_century)
